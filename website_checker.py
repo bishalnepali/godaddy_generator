@@ -105,7 +105,7 @@ domain_chunks = list(chunks(all_domains, chunk_size))
 for domains in domain_chunks:
    # Get availability information by calling availability API
    availability_res = requests.post(url, json=domains, headers=headers)
-   import pdb;pdb.set_trace()
+   #import pdb;pdb.set_trace()
    # Get only available domains with price range
    for domain in json.loads(availability_res.text)["domains"]:
       if domain["available"]:
