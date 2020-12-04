@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site Price Finder Application </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}">
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+    <center> Welcome to the WebSite Price Finder App
+        <div class="demo-block">
+            {% block body %}
+
+            {% endblock %}
+        </div>
+    </center>
+</body>
+
+</html>
