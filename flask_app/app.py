@@ -22,5 +22,14 @@ def index():
         random_id = 12
         return render_template('index.html', random_id = 'demo_token', display_table = False)
 
+@app.route('/update_file')
+def download_csv():
+
+    '''
+    This is will later have upload features:
+
+    '''
+    pass
+
 if __name__ == "__main__":
     app.run(debug=True)

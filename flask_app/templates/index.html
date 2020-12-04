@@ -4,11 +4,18 @@
 
 {% block body %}
 <div id="content">
+    <br>
+    <center>This randomly select two words provided in csv and combine those words to get the result
 
+    </center>
     {% if display_table %}
     <h3>
+        <br>
+        <br>
 
         <center>RANDOM GENERATED LIST </center>
+        <br>
+
     </h3>
     <table>
         <tr>
@@ -58,6 +65,9 @@
     {% endif %}
 
     <form action="/" method="POST">
+        <br>
+        Generate:
+        <br>
         <input type="submit" value="HIT RANDOM"> {% if display_table %} <a href="{{ url_for('index') }}">HOME </a>
         {% endif %}
         <input type="hidden" name="random_id" value="{{ random_id }}">
